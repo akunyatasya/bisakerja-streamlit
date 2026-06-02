@@ -1,0 +1,6 @@
+﻿check_name,dataset,value,detail
+candidate_id_unique,techtalent_profile_cleaned,1,"unique_id=69,929; rows=69,929"
+job_id_unique,indotech_job_cleaned,1,"unique_job_id=1,679; rows=1,679"
+entry_candidate_available,techtalent_profile_cleaned,34915,candidate pool untuk eksperimen early-career
+entry_job_available,indotech_job_cleaned,875,lowongan entry-level untuk referensi market skill
+required_ab_columns_available,processed_outputs,1,kolom minimum untuk assignment dan proxy metric A/B

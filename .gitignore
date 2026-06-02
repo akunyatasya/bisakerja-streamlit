@@ -1,0 +1,40 @@
+# Virtual environments
+.venv/
+venv/
+
+# Byte-compiled / distribution files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Jupyter
+.ipynb_checkpoints/
+
+# VS Code
+.vscode/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Python env files
+.env
+env/
+
+# Logs
+*.log
+
+# Data (exclude raw & external large datasets)
+data/raw/
+data/external/
+
+# Model artifacts (exclude large binaries)
+models/*.h5
+models/*.pth
+models/*.pt
+models/*.ckpt
+models/*.joblib
+models/*.pkl
+
+# Reports/build outputs
+reports/

@@ -1,0 +1,5 @@
+dataset,path,rows,columns,missing_values,missing_value_pct,duplicate_rows,duplicate_identifier_rows,required_columns_count,missing_required_columns,required_columns_ok
+job_cleaned,data\processed\indotech_job_cleaned.csv,1679,35,0,0.0,0,0,18,,True
+job_modeling_ready,data\processed\indotech_job_train.csv,1678,35,0,0.0,0,0,18,,True
+resume_cleaned,data\processed\techtalent_profile_cleaned.csv,69929,7,0,0.0,0,0,7,,True
+job_nontech_reference,data\processed\indotech_nontech.csv,1395,32,1905,4.2675,0,0,17,,True

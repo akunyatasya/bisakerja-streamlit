@@ -1,0 +1,53 @@
+{
+  "random_state": 42,
+  "project_root": "C:\\00 DATA\\01 DATA\\SEMESTER 6\\Metopen\\MIKA SMA\\BisaKerja\\BisaKerja",
+  "input_paths": {
+    "job_cleaned": "data\\processed\\indotech_job_cleaned.csv",
+    "job_modeling_ready": "data\\processed\\indotech_job_train.csv",
+    "resume_cleaned": "data\\processed\\techtalent_profile_cleaned.csv",
+    "job_nontech_reference": "data\\processed\\indotech_nontech.csv"
+  },
+  "output_paths": {
+    "phase0_validation_summary": "data\\features\\phase0_input_validation_summary.csv",
+    "phase0_config": "data\\features\\phase0_config.json"
+  },
+  "identifier_columns": {
+    "job": [
+      "job_id"
+    ],
+    "resume": [
+      "ID"
+    ]
+  },
+  "target_columns": {
+    "job_fit_scoring": [],
+    "skill_gap_analysis": [],
+    "resume_role_classification": [
+      "Job_Role"
+    ],
+    "job_tech_classification_or_filtering": [
+      "is_tech"
+    ]
+  },
+  "audit_pipeline_columns": {
+    "job": [
+      "tech_signal_source",
+      "_is_tech_cat",
+      "_is_tech_title",
+      "_is_tech_skills",
+      "is_train_ready",
+      "fit_input_quality_score",
+      "fit_input_has_requirements",
+      "fit_input_has_skills"
+    ],
+    "resume": []
+  },
+  "use_cases": [
+    "job fit scoring",
+    "skill gap analysis",
+    "resume/job role classification",
+    "dashboard analytics"
+  ],
+  "created_at_utc": "2026-06-01T11:18:20.683577+00:00",
+  "note": "indotech_job_train.csv is a modeling-ready subset, not the final train split."
+}

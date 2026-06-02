@@ -1,0 +1,46 @@
+{
+  "created_at_utc": "2026-06-01T11:18:29.989490+00:00",
+  "random_state": 42,
+  "experiment_name": "early_career_recommendation_ab_test",
+  "unit_of_randomization": "candidate_id",
+  "variant_a": "baseline entry-level market skill overlap",
+  "variant_b": "personalized role-aware skill-gap recommendation",
+  "entry_market_skill_ref_top_n": 20,
+  "entry_market_skill_ref": [
+    "effective communication",
+    "programming",
+    "sql",
+    "react",
+    "java",
+    "it support",
+    "javascript",
+    "python",
+    "figma",
+    "mysql",
+    "go",
+    "postgresql",
+    "ci/cd",
+    "quality assurance",
+    "php",
+    "system analysis",
+    "problem-solving",
+    "troubleshooting",
+    "linux",
+    "negotiation"
+  ],
+  "primary_offline_proxy_metric": "observed_fit_score_proxy",
+  "secondary_offline_proxy_metric": "is_high_fit_proxy",
+  "high_fit_threshold": 25,
+  "production_metrics_recommended": [
+    "apply_click_rate",
+    "application_start_rate",
+    "application_submit_rate",
+    "profile_completion_rate"
+  ],
+  "output_paths": {
+    "ab_candidate_assignments": "data\\features\\ab_testing_candidate_assignments.csv",
+    "ab_summary": "data\\features\\ab_testing_summary.csv",
+    "ab_config": "data\\features\\phase1_ab_testing_config.json"
+  },
+  "important_note": "Offline proxy metrics are not a substitute for real randomized production event logs."
+}
